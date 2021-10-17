@@ -25,6 +25,12 @@ namespace ListBoxTest
         {
             FillCourseTable();
             SelectedCourses();
+
+            listBox1.DataSource = dtCourses;
+            listBox1.DisplayMember = "CourseName";
+
+            listBox2.DataSource = dtSelectedCourses;
+            listBox2.DisplayMember = "CourseName";
         }
 
 
@@ -44,9 +50,9 @@ namespace ListBoxTest
 
         private void SelectedCourses()
         {
-            dtCourses.Columns.Add("CourseID", typeof(int));
-            dtCourses.Columns.Add("CourseName");
-            dtCourses.Columns.Add("CourseDuration");
+            dtSelectedCourses.Columns.Add("CourseID", typeof(int));
+            dtSelectedCourses.Columns.Add("CourseName");
+            dtSelectedCourses.Columns.Add("CourseDuration");
 
 
         }
@@ -55,19 +61,54 @@ namespace ListBoxTest
         {
             if(listBox1.Items.Count > 0)
             {
-                dtSelectedCourses.Rows.Add(dtCourses.Rows[listBox1.SelectedIndex]);
+                dtSelectedCourses.ImportRow(dtCourses.Rows[listBox1.SelectedIndex]);
                 dtCourses.Rows[listBox1.SelectedIndex].Delete();
             }
-            
         }
 
         private void removeBtn_Click(object sender, EventArgs e)
         {
-            if (listBox1.Items.Count > 0)
+            if (listBox2.Items.Count > 0)
             {
-                dtCourses.Rows.Add(dtCourses.Rows[listBox2.SelectedIndex]);
+                dtCourses.ImportRow(dtSelectedCourses.Rows[listBox2.SelectedIndex]);
                 dtSelectedCourses.Rows[listBox2.SelectedIndex].Delete();
             }
+        }
+
+        private void addAllBtn_Click(object sender, EventArgs e)
+        {
+            if (listBox1.Items.Count > 0)
+            {
+                //dtSelectedCourses.ImportRow()
+                int Count = dtCourses.Rows.Count;
+
+                for(int i = Count-1; i >=0; i--)
+                {
+                    dtSelectedCourses.ImportRow(dtCourses.Rows[i]);
+                    dtCourses.Rows[i].Delete();
+                }
+           
+            }
+        }
+
+        private void removeAllBtn_Click(object sender, EventArgs e)
+        {
+            if (listBox2.Items.Count > 0)
+            {
+                int Count = dtSelectedCourses.Rows.Count;
+
+                for (int i = Count - 1; i >= 0; i--)
+                {
+                    dtCourses.ImportRow(dtSelectedCourses.Rows[i]);
+                    dtSelectedCourses.Rows[i].Delete();
+                }
+            }
+        }
+
+
+        private void FinalizeBtn_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

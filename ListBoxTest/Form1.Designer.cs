@@ -76,6 +76,7 @@ namespace ListBoxTest
             this.addAllBtn.TabIndex = 3;
             this.addAllBtn.Text = "Add All";
             this.addAllBtn.UseVisualStyleBackColor = true;
+            this.addAllBtn.Click += new System.EventHandler(this.addAllBtn_Click);
             // 
             // removeBtn
             // 
@@ -97,6 +98,7 @@ namespace ListBoxTest
             this.removeAllBtn.TabIndex = 5;
             this.removeAllBtn.Text = "Remove All";
             this.removeAllBtn.UseVisualStyleBackColor = true;
+            this.removeAllBtn.Click += new System.EventHandler(this.removeAllBtn_Click);
             // 
             // FinalizeBtn
             // 
@@ -107,6 +109,7 @@ namespace ListBoxTest
             this.FinalizeBtn.TabIndex = 6;
             this.FinalizeBtn.Text = "Finalize";
             this.FinalizeBtn.UseVisualStyleBackColor = true;
+            this.FinalizeBtn.Click += new System.EventHandler(this.FinalizeBtn_Click);
             // 
             // dataGridView1
             // 
