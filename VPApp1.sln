@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DropDownTest", "DropDownTes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListBoxTest", "ListBoxTest\ListBoxTest.csproj", "{D410762D-B73B-4C10-ADAC-4D58D5932D86}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseProject", "DatabaseProject\DatabaseProject.csproj", "{829A740B-358F-4E3C-BB6B-1271FF9ECF9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{D410762D-B73B-4C10-ADAC-4D58D5932D86}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D410762D-B73B-4C10-ADAC-4D58D5932D86}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D410762D-B73B-4C10-ADAC-4D58D5932D86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{829A740B-358F-4E3C-BB6B-1271FF9ECF9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{829A740B-358F-4E3C-BB6B-1271FF9ECF9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{829A740B-358F-4E3C-BB6B-1271FF9ECF9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{829A740B-358F-4E3C-BB6B-1271FF9ECF9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

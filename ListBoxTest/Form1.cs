@@ -108,7 +108,23 @@ namespace ListBoxTest
 
         private void FinalizeBtn_Click(object sender, EventArgs e)
         {
+            DialogResult dialog = MessageBox.Show("Are you sure you want to finalize the Selected Courses", "Confirmation Message", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
 
+            if(dialog == DialogResult.Yes)
+            {
+                dataGridView1.DataSource = dtSelectedCourses;
+
+                dataGridView1.Enabled = false;
+                dataGridView1.Columns[0].Visible = false;
+                dataGridView1.RowHeadersVisible = false;
+
+                dataGridView1.Columns[1].Width = 350;
+                dataGridView1.Columns[2].Width = 200;
+            }
+            else
+            {
+                MessageBox.Show("Please Select At Least One Course", "Information  Message", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
     }
 }
