@@ -41,8 +41,8 @@ namespace DropDownTest
 
             dtClinic.Rows.Add(1, "Dentist Pro Clinic", "Palm Beach", "5/10");
             dtClinic.Rows.Add(2, "Fufu Clinic", "Innisfil  Beach", "9/10");
-            dtClinic.Rows.Add(3, "Elemental Hero Clinic", "Yomi Avenue", "5/30");
-            dtClinic.Rows.Add(4, "Dunkey's Castle Clinic", "Dunk Town", "40/10");
+            dtClinic.Rows.Add(3, "Teeth Art Clinic", "Well Avenue", "5/30");
+            dtClinic.Rows.Add(4, "Castle Orthodontics Clinic", "Hunter Street", "40/10");
         }
 
 
@@ -54,17 +54,17 @@ namespace DropDownTest
             dtDoctors.Columns.Add("DSpeciality");
             dtDoctors.Columns.Add("DContact");
 
-            dtDoctors.Rows.Add(1, "Angelica", "Being a Bitch", "4761651651");
-            dtDoctors.Rows.Add(1, "BOBOBO", "Being a Bitch", "65484684");
-            dtDoctors.Rows.Add(1, "AFRICA", "Dying of hunger", "784684");
-            dtDoctors.Rows.Add(1, "Hamilton", "Killing Sons", "789468");
+            dtDoctors.Rows.Add(1, "Angelica", "Cosmetic Dentistry", "4761651651");
+            dtDoctors.Rows.Add(1, "Mark", "Palate Adjustment", "65484684");
+            dtDoctors.Rows.Add(1, "John", "Cosmetic Dentistry", "784684");
+            dtDoctors.Rows.Add(1, "Hamilton", "Cleaning", "789468");
 
-            dtDoctors.Rows.Add(2, "WangXing", "Doing Things", "2222234234");
-            dtDoctors.Rows.Add(2, "Manny", "Studying networking", "234234234");
-            dtDoctors.Rows.Add(2, "Patrick", "GRINDING", "665343234");
+            dtDoctors.Rows.Add(2, "Joe", "Cosmetic Dentistry", "2222234234");
+            dtDoctors.Rows.Add(2, "Manny", "Palate Adjustment", "234234234");
+            dtDoctors.Rows.Add(2, "Patrick", "Palate Adjustment", "665343234");
 
-            dtDoctors.Rows.Add(3, "Mogbi", "Being Made Up", "3215481");
-            dtDoctors.Rows.Add(4, "Dunkey", "Dunk Town", "3216548");
+            dtDoctors.Rows.Add(3, "Mogbi", "Cosmetic Dentistry", "3215481");
+            dtDoctors.Rows.Add(4, "Ash", "Palate Adjustment", "3216548");
         }
 
         private void lblClinicName_Click(object sender, EventArgs e)

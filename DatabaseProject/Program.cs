@@ -16,8 +16,8 @@ namespace DatabaseProject
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new CommandBuilderForm());
-            //Application.Run(new SignIn());
+            //Application.Run(new CommandBuilderForm());
+            Application.Run(new SignIn());
         }
     }
 }

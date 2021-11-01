@@ -36,12 +36,12 @@ namespace PassDataBetweenForms
             this.label2 = new System.Windows.Forms.Label();
             this.txtEmailAddress = new System.Windows.Forms.TextBox();
             this.Services = new System.Windows.Forms.GroupBox();
+            this.chkSMS = new System.Windows.Forms.CheckBox();
             this.lblTransactionMessage = new System.Windows.Forms.Label();
             this.lblSMSMessage = new System.Windows.Forms.Label();
             this.chkTransactions = new System.Windows.Forms.CheckBox();
             this.chkReports = new System.Windows.Forms.CheckBox();
             this.btnSignUp = new System.Windows.Forms.Button();
-            this.chkSMS = new System.Windows.Forms.CheckBox();
             this.Services.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -68,9 +68,9 @@ namespace PassDataBetweenForms
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(101, 173);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 26);
+            this.label1.Size = new System.Drawing.Size(118, 26);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Email";
+            this.label1.Text = "Last Name";
             // 
             // txtLastName
             // 
@@ -110,6 +110,18 @@ namespace PassDataBetweenForms
             this.Services.TabIndex = 6;
             this.Services.TabStop = false;
             this.Services.Text = "Services";
+            // 
+            // chkSMS
+            // 
+            this.chkSMS.AutoSize = true;
+            this.chkSMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.chkSMS.Location = new System.Drawing.Point(37, 49);
+            this.chkSMS.Name = "chkSMS";
+            this.chkSMS.Size = new System.Drawing.Size(174, 28);
+            this.chkSMS.TabIndex = 5;
+            this.chkSMS.Text = "SMS Notifications";
+            this.chkSMS.UseVisualStyleBackColor = true;
+            this.chkSMS.CheckedChanged += new System.EventHandler(this.chkSMS_CheckedChanged);
             // 
             // lblTransactionMessage
             // 
@@ -163,18 +175,6 @@ namespace PassDataBetweenForms
             this.btnSignUp.Text = "Sign Up";
             this.btnSignUp.UseVisualStyleBackColor = true;
             this.btnSignUp.Click += new System.EventHandler(this.btnSignUp_Click);
-            // 
-            // chkSMS
-            // 
-            this.chkSMS.AutoSize = true;
-            this.chkSMS.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.chkSMS.Location = new System.Drawing.Point(37, 49);
-            this.chkSMS.Name = "chkSMS";
-            this.chkSMS.Size = new System.Drawing.Size(174, 28);
-            this.chkSMS.TabIndex = 5;
-            this.chkSMS.Text = "SMS Notifications";
-            this.chkSMS.UseVisualStyleBackColor = true;
-            this.chkSMS.CheckedChanged += new System.EventHandler(this.chkSMS_CheckedChanged);
             // 
             // SignUp
             // 
